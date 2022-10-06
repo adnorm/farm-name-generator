@@ -13,19 +13,21 @@
 }
 
 .instructions-box {
+  font-size: 18px;
   background-color: #EFEFEF;
   color: black;
   padding: 2px 2px 2px 30px;
 }
 
 .btn-primary{
-  background-color: #BCD8C1;
-  border-color: #BCD8C1;
-  color: black;
+  background-color: #33691E;
+  border-color: #33691E;
+  font-size: 32px;
+  color: white;
 }
 
 .btn-primary:hover{
-  background-color: #000;
-  border-color: #000;
+  background-color: #558B2F;
+  border-color: #558B2F;
   color: white;
 }

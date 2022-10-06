@@ -1,4 +1,5 @@
 <html>
+<meta charset="UTF-8">
 <head>
 <title>Adam's Farm Names</title>
 <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/7821/7821679.png">
@@ -10,17 +11,20 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid"><strong>
     <h1 class="black-box rokkitt text-center">
       FARM NAME GENERATOR
-    </h1>
+    </h1></strong>
+
+    <p class="text-center"><strong><span class="text-center" style="font-size:50px;">&#128055;</span></strong></p>
+
     <p class="text-center"><strong>By Adam Norman</strong></p>
     <div class="instructions-box rokkitt">
       <h3><strong>Instructions</strong></h3>
-      <h4>Check your desired name features and click "Generate name!" or press [ spacebar ] to create a new farm name!</h4>
+      <h4>Check off your desired features and click "Hatch an idea! &#128035;" or press [ spacebar ] to create a new farm name!</h4>
       <br/>
 
-      <h5>Geographical Features</h5>
+      <h5>Geographical Features (Optional)</h5>
 <input class="geofeatures" type="checkbox" id="chkAdd" value="Lake"><label>Lake</label>
 <input class="geofeatures" type="checkbox" id="chkAdd" value="Brook"><label>Brook</label>
 <input class="geofeatures" type="checkbox" id="chkAdd" value="Creek"><label>Creek</label>
@@ -55,6 +59,7 @@
 <input class="farmtype" type="checkbox" id="chkAdd" value="Vineyard"><label>Vineyard</label>
 <input class="farmtype" type="checkbox" id="chkAdd" value="Garden"><label>Garden</label>
 <input class="farmtype" type="checkbox" id="chkAdd" value="Ranch"><label>Ranch</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Stable"><label>Stable</label>
 <input class="farmtype" type="checkbox" id="chkAdd" value="Homestead"><label>Homestead</label>
 <input class="farmtype" type="checkbox" id="chkAdd" value="Farmstead"><label>Farmstead</label>
 <br/><br/>
@@ -66,8 +71,8 @@
 <br/><br/>
     </div>
     <h4></h4>
-    <button onclick="generator()" class="btn btn-primary btn-block btn-large">Generate name!</button>
-    <h2 class="jumbotron text-center rokkitt" id="name">Farm  Name Will Appear Here</h2>
+    <button onclick="generator()" class="btn btn-primary btn-block btn-large">Hatch an idea! &#128035;</button>
+    <h2 class="jumbotron text-center rokkitt" id="name"> Farm  Name Will Appear Here</h2>
   </div>
 </body>
 </html>
