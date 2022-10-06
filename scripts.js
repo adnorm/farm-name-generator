@@ -1,5 +1,5 @@
 
-var adjective = ["Crooked", "Deep", "Even", "Flat", "Hilly", "Jagged", "Round", "Shallow", "Winding", "Fresh", "Verdant", "Rolling", "Babbling", "Jumping", "Old", "Willow", "Shady", "Calm", "Lucky", "Sunny", "Green", "Sleeping","Windy","Victory","Freedom","Deep", "Whisper","Liberty","Early","Morning","Spring","Blooming", "Dancing","Hidden","Golden","Rich","Quiet","Wandering","Honest","Truthful","Sliding","Singing","Fruitful","Lost","Roaming","Wild","Bucking","Sun","Moon","Flying","Sweet","Muddy","Joyful","Sylvan","Friendly"]
+var adjective = ["Crooked", "Deep", "Even", "Flat", "Hilly", "Jagged", "Round", "Shallow", "Winding", "Fresh", "Verdant", "Rolling", "Babbling", "Jumping", "Old", "Willow", "Shady", "Calm", "Lucky", "Sunny", "Green", "Sleeping","Windy","Victory","Freedom","Deep", "Whisper","Liberty","Early","Morning","Spring","Blooming", "Dancing","Hidden","Golden","Rich","Quiet","Wandering","Honest","Truthful","Sliding","Singing","Fruitful","Lost","Roaming","Wild","Bucking","Sun","Moon","Flying","Goose", "Sweet","Muddy","Joyful","Sylvan","Friendly"]
 
 
 var object = ["Acres", "Pastures", "Grove", "Crest", "Fields", "Pines", "Stone", "Hollow", "Hickory","Roost", "Barn", "Willow", "Run", "Harvest","Trails", "Vista","Trace", "Cottage","Passage","Dream","Boots","Work"]
@@ -17,6 +17,18 @@ function generator() {
   var farmType = $("input.farmtype:checked").map(function(){
       return $(this).val();
     }).get();
+    // alert(farmType);
+if (farmType == ""){
+  alert("Whoops! Please select at least one farm type!")
+  return
+}
+
+
+if (pluralOrNot == ""){
+  alert("Whoops! Please select singular or plural!")
+  return
+}
+
 
 var secondWord = object.concat(geoFeatures);
 
