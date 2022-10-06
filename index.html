@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Adam's Farm Names</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./styles.css" type="text/css">
+<script src="scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <h1 class="black-box rokkitt text-center">
+      FARM NAME GENERATOR
+    </h1>
+    <div class="instructions-box rokkitt text-center">
+      <h3><strong>Instructions</strong></h3>
+      <h4>Click the "Generate" Button to Generate a Random Name!</h4>
+      <br/>
+
+      <h5>Geographical Features</h5>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Lake"><label>Lake</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Brook"><label>Brook</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Creek"><label>Creek</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="River"><label>River</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Pond"><label>Pond</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Valley"><label>Valley</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Mountain"><label>Mountain</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Canyon"><label>Canyon</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Hills"><label>Hills</label>
+<!-- <input class="geofeatures" type="checkbox" id="chkAdd" value="Rocky"><label>Rocky</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Grassy"><label>Grassy</label> -->
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Forest"><label>Forest</label>
+<input class="geofeatures" type="checkbox" id="chkAdd" value="Meadows"><label>Meadows</label>
+<br/><br/>
+<!-- <h5>Relevant Animals</h5>
+<input class="operation" type="checkbox" id="chkAdd" value="Lake"><label>Cow</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Brook"><label>Pig</label>
+<input class="operation" type="checkbox" id="chkAdd" value="River"><label>Goat</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Chicken</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Lake"><label>Duck</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Brook"><label>Horse</label>
+<input class="operation" type="checkbox" id="chkAdd" value="River"><label>Alpaca</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Llama</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Duck</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Fox</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Wolf</label>
+<input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Bear</label>
+<br/><br/> -->
+<h5>Farm Variants</h5>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Farm"><label>Farm</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Orchard"><label>Orchard</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Vineyard"><label>Vineyard</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Garden"><label>Garden</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Ranch"><label>Ranch</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Homestead"><label>Homestead</label>
+<input class="farmtype" type="checkbox" id="chkAdd" value="Farmstead"><label>Farmstead</label>
+<br/><br/>
+<h5>Singular or plural?</h5>
+
+<input class="plural" type="checkbox" id="chkAdd" value=" "><label>Singular</label>
+<input class="plural" type="checkbox" id="chkAdd" value="s"><label>Plural</label>
+
+<br/><br/>
+    </div>
+    <h4></h4>
+    <button onclick="generator()" class="btn btn-primary btn-block btn-large">Generate name!</button>
+    <h2 class="jumbotron text-center rokkitt" id="name">Farm  Name Will Appear Here</h2>
+  </div>
+</body>
+</html>
