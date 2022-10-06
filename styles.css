@@ -9,13 +9,13 @@
 .black-box {
   background-color: #3C0000;
   color: white;
-  padding: 20px 20px 20px 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 .instructions-box {
-  background-color: #E9D985;
+  background-color: #EFEFEF;
   color: black;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 30px;
 }
 
 .btn-primary{
