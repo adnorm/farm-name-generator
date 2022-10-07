@@ -3,9 +3,8 @@
 <head>
 <title>Adam's Farm Names</title>
 <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/7821/7821679.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="./styles.css" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles.css">
 <script src="./scripts.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -13,31 +12,47 @@
 <body>
 <div class="container-fluid"><strong>
     <h1 class="black-box rokkitt text-center">
-      FARM NAME GENERATOR
+      &#128055; FARM NAME GENERATOR &#127806;
     </h1></strong>
 
-    <p class="text-center"><strong><span class="text-center" style="font-size:50px;">&#128055;</span></strong></p>
+    <p class="text-center"><strong>by Adam Norman - Oct 2022</strong></p>
 
-    <p class="text-center"><strong>By Adam Norman</strong></p>
     <div class="instructions-box rokkitt">
       <h3><strong>Instructions</strong></h3>
       <h4>Check off your desired features and click "Hatch an idea! &#128035;" or press [ spacebar ] to create a new farm name!</h4>
       <br/>
 
-      <h5>Geographical Features (Optional)</h5>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Lake"><label>Lake</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Brook"><label>Brook</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Creek"><label>Creek</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="River"><label>River</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Pond"><label>Pond</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Valley"><label>Valley</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Mountain"><label>Mountain</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Canyon"><label>Canyon</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Hills"><label>Hills</label>
-<!-- <input class="geofeatures" type="checkbox" id="chkAdd" value="Rocky"><label>Rocky</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Grassy"><label>Grassy</label> -->
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Forest"><label>Forest</label>
-<input class="geofeatures" type="checkbox" id="chkAdd" value="Meadows"><label>Meadows</label>
+      <h4>Geographical Features (Optional)</h4>
+<div class="form-check form-check-inline">
+  <input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Lake"><label class="form-check-label">Lake</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Creek"><label>Creek</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="River"><label>River</label>
+</div>
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Pond"><label>Pond</label>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Valley"><label>Valley</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Mountain"><label>Mountain</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Canyon"><label>Canyon</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Hills"><label>Hills</label>
+</div>
+<!-- <input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Rocky"><label>Rocky</label>
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Grassy"><label>Grassy</label> -->
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Forest"><label>Forest</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="geofeatures form-check-input" type="checkbox" id="chkAdd" value="Meadows"><label>Meadows</label>
+</div>
 <br/><br/>
 <!-- <h5>Relevant Animals</h5>
 <input class="operation" type="checkbox" id="chkAdd" value="Lake"><label>Cow</label>
@@ -53,26 +68,46 @@
 <input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Wolf</label>
 <input class="operation" type="checkbox" id="chkAdd" value="Pond"><label>Bear</label>
 <br/><br/> -->
-<h5>Farm Variants</h5>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Farm"><label>Farm</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Orchard"><label>Orchard</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Vineyard"><label>Vineyard</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Garden"><label>Garden</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Ranch"><label>Ranch</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Stable"><label>Stable</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Homestead"><label>Homestead</label>
-<input class="farmtype" type="checkbox" id="chkAdd" value="Farmstead"><label>Farmstead</label>
+<h4>Farm Variants</h4>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Farm"><label>Farm</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Orchard"><label>Orchard</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Vineyard"><label>Vineyard</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Garden"><label>Garden</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Ranch"><label>Ranch</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Stable"><label>Stable</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Homestead"><label>Homestead</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="farmtype form-check-input" type="checkbox" id="chkAdd" value="Farmstead"><label>Farmstead</label>
+</div>
 <br/><br/>
-<h5>Singular or plural?</h5>
-
-<input class="plural" type="checkbox" id="chkAdd" value=" "><label>Singular</label>
-<input class="plural" type="checkbox" id="chkAdd" value="s"><label>Plural</label>
-
+<h4>Singular or plural?</h4>
+<div class="form-check form-check-inline">
+<input class="plural form-check-input" type="checkbox" id="chkAdd" value=" "><label>Singular</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="plural form-check-input" type="checkbox" id="chkAdd" value="s"><label>Plural</label>
+</div>
 <br/><br/>
     </div>
-    <h4></h4>
     <button onclick="generator()" class="btn btn-primary btn-block btn-large">Hatch an idea! &#128035;</button>
-    <h2 class="jumbotron text-center rokkitt" id="name"> Farm  Name Will Appear Here</h2>
+    <div class="mt-4 p-5 text-black rounded">
+    <h2 class="display-4 text-center rokkitt" id="name"> Farm  Name Will Appear Here</h2>
+  </div>
+  </div>
   </div>
 </body>
 </html>

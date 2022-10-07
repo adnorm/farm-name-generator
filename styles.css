@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
-@import url(https://fonts.googleapis.com/css?family=Rokkitt);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 .rokkitt {
-  font-family: rokkitt;
+  font-family: Ubuntu;
 }
 
 .black-box {
+  font-family: oswald;
   background-color: #3C0000;
+  font-weight: bold;
   color: white;
   padding: 30px 20px 30px 20px;
 }
@@ -16,18 +19,26 @@
   font-size: 18px;
   background-color: #EFEFEF;
   color: black;
-  padding: 2px 2px 2px 30px;
+  padding: 2em;
+  border-radius: 7px;
+  margin-bottom: 1em;
 }
 
 .btn-primary{
   background-color: #33691E;
   border-color: #33691E;
+  font-family: oswald;
   font-size: 32px;
   color: white;
+  width:100%;
 }
 
 .btn-primary:hover{
   background-color: #558B2F;
   border-color: #558B2F;
   color: white;
+}
+
+.mt-4{
+  background-color: #EFEFEF;
 }
